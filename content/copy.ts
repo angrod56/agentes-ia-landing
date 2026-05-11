@@ -163,13 +163,18 @@ export const copy = {
   valueStack: {
     title: "Esto es TODO lo que recibes hoy:",
     items: [
-      { item: "Taller completo (5 módulos, 3 horas de video)", value: "$197" },
-      { item: "Librería de 7 agentes plantilla listos", value: "$297" },
-      { item: "Plantillas de prompts profesionales", value: "$97" },
-      { item: "Checklist técnico de implementación", value: "$47" },
+      { item: "Taller completo (5 módulos, +3 horas de video paso a paso)", value: "$197" },
+      { item: "Librería de 7 agentes plantilla listos para usar", value: "$297" },
+      { item: "Plantillas de prompts profesionales para cada caso de uso", value: "$97" },
+      { item: "Checklist técnico de implementación y lanzamiento", value: "$47" },
+      { item: "Manual descargable de Ingeniería de Prompting para agentes", value: "$67" },
+      { item: "Acceso al grupo privado de WhatsApp + bono sorpresa exclusivo", value: "$97" },
+      { item: 'Módulo "Cómo cobrar $500–$3.000 USD por implementación" (VIP)', value: "$197" },
+      { item: "Sesiones Q&A en vivo 1x al mes durante 3 meses (VIP)", value: "$291" },
+      { item: "Tu Squad de Agentes IA — equipo de agentes que trabajan juntos (VIP)", value: "$197" },
     ],
-    totalValue: "$882",
-    todayPrice: "$9",
+    totalValue: "$1.487",
+    todayPrice: "$27",
   },
 
   pricing: {
