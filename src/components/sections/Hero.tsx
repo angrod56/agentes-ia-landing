@@ -5,7 +5,6 @@ import BadgeLabel from "@/components/ui/BadgeLabel";
 import Button from "@/components/ui/Button";
 import { copy } from "../../../content/copy";
 import { pixelEvents } from "@/lib/fbpixel";
-import { CHECKOUT_URLS } from "@/lib/constants";
 
 export default function Hero() {
   useEffect(() => {
@@ -59,26 +58,10 @@ export default function Hero() {
           {copy.hero.subtitle}
         </p>
 
-        {/* Video VSL */}
-        <div
-          className="animate-fade-in-up mx-auto mt-10 w-full max-w-3xl overflow-hidden rounded-2xl border border-[rgba(249,115,22,0.2)] shadow-2xl shadow-black/60"
-          style={{ animationDelay: "0.3s", opacity: 0 }}
-        >
-          <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
-            <iframe
-              src={copy.hero.videoUrl}
-              title="Agentes IA en 15 Minutos — Video presentación"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              className="absolute inset-0 h-full w-full"
-            />
-          </div>
-        </div>
-
         {/* CTA principal */}
         <div
           className="animate-fade-in-up mt-10 flex flex-col items-center gap-3"
-          style={{ animationDelay: "0.4s", opacity: 0 }}
+          style={{ animationDelay: "0.3s", opacity: 0 }}
         >
           <Button
             variant="primary"
@@ -94,7 +77,7 @@ export default function Hero() {
         {/* Trust bar */}
         <div
           className="animate-fade-in-up mx-auto mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-3"
-          style={{ animationDelay: "0.5s", opacity: 0 }}
+          style={{ animationDelay: "0.4s", opacity: 0 }}
         >
           {copy.hero.trustBar.map((item) => (
             <div
