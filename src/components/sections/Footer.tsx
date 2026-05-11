@@ -9,16 +9,17 @@ export default function Footer() {
       <div className="mx-auto max-w-[1200px] border-t border-[rgba(249,115,22,0.15)] py-16">
         <div className="flex flex-col items-center gap-8 text-center">
 
-          {/* Foto grande con anillo naranja */}
+          {/* Foto con anillo naranja */}
           <div className="relative">
-            <div className="absolute -inset-1.5 rounded-full bg-gradient-to-br from-[#F97316] to-[#EA580C] opacity-60 blur-sm" />
-            <div className="relative h-40 w-40 overflow-hidden rounded-full border-[3px] border-[#F97316]">
+            <div className="absolute -inset-1.5 rounded-2xl bg-gradient-to-br from-[#F97316] to-[#EA580C] opacity-60 blur-sm" />
+            <div className="relative w-48 overflow-hidden rounded-2xl border-[3px] border-[#F97316]">
               <Image
                 src={copy.footer.photo}
                 alt="Foto de Angel Augusto Rodríguez"
-                fill
-                className="object-cover"
-                sizes="160px"
+                width={192}
+                height={288}
+                className="w-full object-contain"
+                sizes="192px"
               />
             </div>
           </div>
