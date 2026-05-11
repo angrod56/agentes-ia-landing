@@ -14,7 +14,7 @@ export default function ModuleCard({
   index,
 }: ModuleCardProps) {
   return (
-    <div className="flex gap-4 rounded-xl border border-[rgba(249,115,22,0.15)] bg-[#1A1A1A] p-6 transition-all duration-200 hover:border-[rgba(249,115,22,0.4)]">
+    <div className="flex gap-3 rounded-xl border border-[rgba(249,115,22,0.15)] bg-[#1A1A1A] p-4 transition-all duration-200 hover:border-[rgba(249,115,22,0.4)] md:gap-4 md:p-6">
       <span className="mt-0.5 shrink-0 text-2xl" aria-hidden>
         📦
       </span>

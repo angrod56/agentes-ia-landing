@@ -16,7 +16,7 @@ export default function TestimonialCard({
   photo,
 }: TestimonialCardProps) {
   return (
-    <div className="flex shrink-0 flex-col gap-5 rounded-xl border border-[rgba(249,115,22,0.15)] bg-[#0D0D0D] p-6 w-[80vw] md:w-auto">
+    <div className="flex shrink-0 flex-col gap-5 rounded-xl border border-[rgba(249,115,22,0.15)] bg-[#0D0D0D] p-5 w-[82vw] min-w-[270px] max-w-[360px] md:w-auto md:max-w-none md:p-6">
       {/* Foto + estrellas */}
       <div className="flex items-center gap-4">
         <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-full border-2 border-[#F97316]">

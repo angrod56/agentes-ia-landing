@@ -8,7 +8,7 @@ export default function Curriculum() {
       className="bg-[#0D0D0D] px-4 py-[60px] md:py-[80px]"
     >
       <div className="mx-auto max-w-[1200px]">
-        <h2 className="text-center text-[28px] font-bold leading-tight text-white md:text-[36px]">
+        <h2 className="text-center text-2xl font-bold leading-tight text-white md:text-[36px]">
           {copy.curriculum.title}
         </h2>
 

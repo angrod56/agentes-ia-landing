@@ -42,7 +42,7 @@ export default function Hero() {
 
         {/* H1 */}
         <h1
-          className="animate-fade-in-up text-center text-[32px] font-extrabold leading-tight tracking-tight text-white md:text-[52px]"
+          className="animate-fade-in-up text-center text-[26px] font-extrabold leading-tight tracking-tight text-white sm:text-[32px] md:text-[52px]"
           style={{ animationDelay: "0.1s", opacity: 0 }}
         >
           {copy.hero.title.part1}
@@ -76,7 +76,7 @@ export default function Hero() {
 
         {/* Trust bar */}
         <div
-          className="animate-fade-in-up mx-auto mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-3"
+          className="animate-fade-in-up mx-auto mt-10 flex flex-wrap items-center justify-center gap-x-4 gap-y-3 md:gap-x-6"
           style={{ animationDelay: "0.4s", opacity: 0 }}
         >
           {copy.hero.trustBar.map((item) => (

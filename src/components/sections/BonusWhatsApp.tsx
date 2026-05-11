@@ -31,7 +31,7 @@ export default function BonusWhatsApp() {
             </div>
 
             {/* Título */}
-            <h2 className="text-[26px] font-extrabold leading-tight text-white md:text-[36px]">
+            <h2 className="text-xl font-extrabold leading-tight text-white md:text-[36px]">
               Acceso al Grupo Privado de WhatsApp{" "}
               <span className="text-[#25D366]">+ Bono Sorpresa</span>
             </h2>

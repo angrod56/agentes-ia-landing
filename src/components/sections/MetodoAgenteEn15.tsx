@@ -14,7 +14,7 @@ export default function MetodoAgenteEn15() {
         </p>
 
         {/* Título H2 */}
-        <h2 className="mt-3 text-center text-[28px] font-bold leading-tight text-white md:text-[36px]">
+        <h2 className="mt-3 text-center text-2xl font-bold leading-tight text-white md:text-[36px]">
           {copy.metodoAgenteEn15.title}
         </h2>
 

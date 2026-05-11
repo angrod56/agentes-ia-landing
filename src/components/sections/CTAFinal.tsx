@@ -21,7 +21,7 @@ export default function CTAFinal() {
     >
       <div className="mx-auto max-w-[1200px]">
         {/* Título */}
-        <h2 className="text-center text-[28px] font-extrabold leading-tight text-white md:text-[42px]">
+        <h2 className="text-center text-2xl font-extrabold leading-tight text-white md:text-[42px]">
           {copy.ctaFinal.title}
         </h2>
 
@@ -38,7 +38,7 @@ export default function CTAFinal() {
         </div>
 
         {/* Banner de urgencia */}
-        <div className="mx-auto mt-12 max-w-2xl rounded-lg bg-[#F97316] px-6 py-5 text-center">
+        <div className="mx-auto mt-12 max-w-2xl rounded-lg bg-[#F97316] px-4 py-4 text-center md:px-6 md:py-5">
           <p className="text-lg font-extrabold text-black">
             {copy.ctaFinal.urgencyBanner.title}
           </p>
@@ -51,13 +51,13 @@ export default function CTAFinal() {
         <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
           <button
             onClick={() => handleCheckout("basico")}
-            className="w-full rounded-lg border-2 border-[#F97316] px-8 py-4 text-base font-extrabold uppercase tracking-wide text-[#F97316] transition-all duration-200 hover:bg-[#F97316] hover:text-black hover:scale-105 sm:w-auto"
+            className="w-full rounded-lg border-2 border-[#F97316] px-6 py-4 text-sm font-extrabold uppercase tracking-wide text-[#F97316] transition-all duration-200 hover:bg-[#F97316] hover:text-black hover:scale-105 sm:w-auto sm:px-8 sm:text-base"
           >
             {copy.pricing.plans.basico.ctaText}
           </button>
           <button
             onClick={() => handleCheckout("vip")}
-            className="w-full animate-pulse-orange rounded-lg bg-[#F97316] px-8 py-4 text-base font-extrabold uppercase tracking-wide text-black transition-all duration-200 hover:bg-[#EA580C] hover:scale-105 hover:shadow-lg hover:shadow-orange-500/40 sm:w-auto"
+            className="w-full animate-pulse-orange rounded-lg bg-[#F97316] px-6 py-4 text-sm font-extrabold uppercase tracking-wide text-black transition-all duration-200 hover:bg-[#EA580C] hover:scale-105 hover:shadow-lg hover:shadow-orange-500/40 sm:w-auto sm:px-8 sm:text-base"
           >
             {copy.pricing.plans.vip.ctaText}
           </button>

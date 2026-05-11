@@ -14,7 +14,7 @@ export default function Footer() {
             {/* Foto */}
             <div className="relative shrink-0">
               <div className="absolute -inset-1.5 rounded-2xl bg-gradient-to-br from-[#F97316] to-[#EA580C] opacity-60 blur-sm" />
-              <div className="relative w-44 overflow-hidden rounded-2xl border-[3px] border-[#F97316]">
+              <div className="relative w-36 overflow-hidden rounded-2xl border-[3px] border-[#F97316] md:w-44">
                 <Image
                   src={copy.footer.photo}
                   alt="Foto de Angel Augusto Rodríguez"

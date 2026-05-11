@@ -86,7 +86,7 @@ export default function SaleNotification() {
   }
 
   return (
-    <div className="fixed bottom-24 left-4 z-50 max-w-[300px] md:bottom-8 md:left-6">
+    <div className="fixed bottom-24 left-3 z-50 w-[calc(100vw-1.5rem)] max-w-[300px] md:bottom-8 md:left-6 md:w-auto">
       <AnimatePresence>
         {visible && current && (
           <motion.div

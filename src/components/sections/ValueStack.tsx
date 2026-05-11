@@ -16,10 +16,10 @@ export default function ValueStack() {
           {copy.valueStack.items.map((row, i) => (
             <div
               key={row.item}
-              className="flex items-center justify-between gap-4 px-6 py-4"
+              className="flex items-center justify-between gap-2 px-3 py-3 md:gap-4 md:px-6 md:py-4"
               style={{ background: i % 2 === 0 ? "#1A1A1A" : "#0D0D0D" }}
             >
-              <span className="flex items-center gap-3 text-sm text-[#CCCCCC] md:text-base">
+              <span className="flex items-center gap-2 text-xs text-[#CCCCCC] md:gap-3 md:text-base">
                 <span className="text-[#10B981]">✅</span>
                 {row.item}
               </span>
@@ -30,15 +30,15 @@ export default function ValueStack() {
           ))}
 
           {/* Fila total */}
-          <div className="flex items-center justify-between gap-4 bg-[#F97316] px-6 py-5">
+          <div className="flex items-center justify-between gap-2 bg-[#F97316] px-3 py-4 md:gap-4 md:px-6 md:py-5">
             <span className="text-base font-extrabold text-black md:text-lg">
               Valor total
             </span>
-            <div className="flex items-center gap-4">
-              <span className="text-lg font-extrabold text-black/50 line-through">
+            <div className="flex items-center gap-2 md:gap-4">
+              <span className="text-sm font-extrabold text-black/50 line-through md:text-lg">
                 {copy.valueStack.totalValue}
               </span>
-              <span className="text-2xl font-extrabold text-black md:text-3xl">
+              <span className="text-xl font-extrabold text-black md:text-3xl">
                 {copy.valueStack.todayPrice} HOY
               </span>
             </div>
