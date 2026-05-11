@@ -171,9 +171,8 @@ export const copy = {
       { item: "Acceso al grupo privado de WhatsApp + bono sorpresa exclusivo", value: "$97" },
       { item: 'Módulo "Cómo cobrar $500–$3.000 USD por implementación" (VIP)', value: "$197" },
       { item: "Sesiones Q&A en vivo 1x al mes durante 3 meses (VIP)", value: "$291" },
-      { item: "Tu Squad de Agentes IA — equipo de agentes que trabajan juntos (VIP)", value: "$197" },
     ],
-    totalValue: "$1.487",
+    totalValue: "$1.290",
     todayPrice: "$27",
   },
 
@@ -216,7 +215,6 @@ export const copy = {
           "Guion de venta + propuesta tipo + contrato modelo",
           "Sesión Q&A en vivo conmigo (1x al mes durante 3 meses)",
           "**Acceso DE POR VIDA al programa**",
-          "**Tu Squad de Agentes IA:** te enseñamos a crear un equipo de agentes que trabajan juntos y automatizan tu negocio de punta a punta",
           "📄 **Material descargable:** Manual de Ingeniería de Prompting para agentes de IA",
           "🎁 **Bono sorpresa:** Mi prompt maestro de Claude para construir agentes 5x más rápido",
         ],
