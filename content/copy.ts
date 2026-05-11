@@ -322,8 +322,9 @@ export const copy = {
 
   footer: {
     signature: "Nos vemos adentro,",
-    name: "— Angel",
-    role: "Fundador de MDC Company · Especialista en automatización con IA",
+    name: "Angel Augusto Rodríguez",
+    role: "Fundador de MDC Company · @mentoriasangel",
+    bio: "Lidera MDC Company desde Medellín y enseña en @mentoriasangel a cientos de emprendedores hispanos cómo escalar con inteligencia artificial. Su especialidad: combinar copy, automatización y agentes de IA para construir negocios que crezcan sin perder alma.",
     photo: "/angel-foto.jpg",
     legal:
       "Este sitio no está afiliado a Facebook, Meta, Google o cualquier otra plataforma mencionada.",
