@@ -167,7 +167,6 @@ export const copy = {
       { item: "Librería de 7 agentes plantilla listos", value: "$297" },
       { item: "Plantillas de prompts profesionales", value: "$97" },
       { item: "Checklist técnico de implementación", value: "$47" },
-      { item: "Actualizaciones de por vida", value: "$147" },
     ],
     totalValue: "$882",
     todayPrice: "$9",
@@ -211,7 +210,7 @@ export const copy = {
           '**Módulo exclusivo:** "Cómo cobrar $500–$3.000 USD por implementación"',
           "Guion de venta + propuesta tipo + contrato modelo",
           "Sesión Q&A en vivo conmigo (1x al mes durante 3 meses)",
-          "**Acceso DE POR VIDA + todas las actualizaciones futuras**",
+          "**Acceso DE POR VIDA al programa**",
           "🎁 **Bono sorpresa:** Mi prompt maestro de Claude para construir agentes 5x más rápido",
         ],
         ctaText: "🔥 QUIERO ENTRAR AL PLAN VIP",
@@ -297,7 +296,7 @@ export const copy = {
       {
         question: "¿Cuánto tiempo tengo acceso?",
         answer:
-          "Plan Básico: 30 días. Plan VIP: acceso de por vida + todas las actualizaciones futuras incluidas.",
+          "Plan Básico: 30 días. Plan VIP: acceso de por vida al programa.",
       },
     ],
   },
