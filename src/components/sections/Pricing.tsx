@@ -1,5 +1,6 @@
 import PricingCard from "@/components/ui/PricingCard";
 import { copy } from "../../../content/copy";
+import { FadeIn } from "@/components/ui/FadeIn";
 
 export default function Pricing() {
   const { basico, vip } = copy.pricing.plans;
@@ -11,19 +12,17 @@ export default function Pricing() {
       className="bg-[#1A1A1A] px-4 py-[80px] md:py-[100px]"
     >
       <div className="mx-auto max-w-[1200px]">
-        {/* Pre-título */}
-        <p className="text-center text-xs font-semibold uppercase tracking-widest text-[#F97316]">
-          {copy.pricing.preTitle}
-        </p>
+        <FadeIn>
+          <p className="text-center text-xs font-semibold uppercase tracking-widest text-[#F97316]">
+            {copy.pricing.preTitle}
+          </p>
+          <h2 className="mt-3 text-center text-2xl font-bold leading-tight text-white md:text-[36px]">
+            {copy.pricing.title}
+          </h2>
+        </FadeIn>
 
-        {/* Título */}
-        <h2 className="mt-3 text-center text-[28px] font-bold leading-tight text-white md:text-[36px]">
-          {copy.pricing.title}
-        </h2>
-
-        {/* Cards — margen superior extra para que el badge VIP no se corte */}
         <div className="mt-16 flex flex-col gap-8 md:flex-row md:items-center md:gap-8">
-          <div className="md:flex-1">
+          <FadeIn delay={0.1} className="md:flex-1">
             <PricingCard
               planType="basico"
               name={basico.name}
@@ -36,8 +35,8 @@ export default function Pricing() {
               ctaText={basico.ctaText}
               highlighted={basico.highlighted}
             />
-          </div>
-          <div className="md:flex-1">
+          </FadeIn>
+          <FadeIn delay={0.2} className="md:flex-1">
             <PricingCard
               planType="vip"
               name={vip.name}
@@ -51,7 +50,7 @@ export default function Pricing() {
               ctaSubtext={vip.ctaSubtext}
               highlighted={vip.highlighted}
             />
-          </div>
+          </FadeIn>
         </div>
       </div>
     </section>

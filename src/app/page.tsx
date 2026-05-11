@@ -15,6 +15,7 @@ import CTAFinal from "@/components/sections/CTAFinal";
 import Footer from "@/components/sections/Footer";
 import WhatsAppFloat from "@/components/ui/WhatsAppFloat";
 import SaleNotification from "@/components/ui/SaleNotification";
+import StickyCta from "@/components/ui/StickyCta";
 
 export default function HomePage() {
   return (
@@ -36,6 +37,7 @@ export default function HomePage() {
       <Footer />
       <WhatsAppFloat />
       <SaleNotification />
+      <StickyCta />
     </main>
   );
 }

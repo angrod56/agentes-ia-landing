@@ -43,10 +43,10 @@ export default function PricingCard({
   return (
     <div
       className={cn(
-        "relative flex flex-col rounded-2xl border p-5 md:p-8 transition-all duration-200",
+        "relative flex flex-col rounded-2xl border p-5 md:p-8 transition-all duration-300",
         highlighted
-          ? "border-[3px] border-[#F97316] bg-[#1A1A1A] shadow-2xl shadow-orange-500/20 md:scale-105"
-          : "border border-[rgba(249,115,22,0.2)] bg-[#1A1A1A]"
+          ? "animate-glow-pulse border-[3px] border-[#F97316] bg-[#1A1A1A] shadow-2xl shadow-orange-500/20 md:scale-105"
+          : "border border-[rgba(249,115,22,0.2)] bg-[#1A1A1A] hover:border-[rgba(249,115,22,0.5)] hover:shadow-lg hover:shadow-orange-500/10"
       )}
     >
       {/* Badge VIP sobresaliente */}

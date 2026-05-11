@@ -30,30 +30,69 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* ── Fade in up ─────────────────────────────── */
 @keyframes fade-in-up {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
-
 .animate-fade-in-up {
   animation: fade-in-up 0.6s ease-out forwards;
 }
 
+/* ── Pulse orange (CTA glow) ────────────────── */
 @keyframes pulse-orange {
-  0%, 100% {
-    box-shadow: 0 0 0 0 rgba(249, 115, 22, 0.4);
-  }
-  50% {
-    box-shadow: 0 0 0 12px rgba(249, 115, 22, 0);
-  }
+  0%, 100% { box-shadow: 0 0 0 0 rgba(249, 115, 22, 0.4); }
+  50%       { box-shadow: 0 0 0 12px rgba(249, 115, 22, 0); }
 }
-
 .animate-pulse-orange {
   animation: pulse-orange 2s infinite;
 }
+
+/* ── Float (hero orbs) ──────────────────────── */
+@keyframes float {
+  0%, 100% { transform: translateY(0px) scale(1); }
+  50%       { transform: translateY(-28px) scale(1.04); }
+}
+@keyframes float-alt {
+  0%, 100% { transform: translateY(0px) scale(1); }
+  50%       { transform: translateY(20px) scale(0.97); }
+}
+.animate-float     { animation: float     9s ease-in-out infinite; }
+.animate-float-alt { animation: float-alt 12s ease-in-out infinite; }
+
+/* ── Shimmer (badges/buttons) ───────────────── */
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position:  200% center; }
+}
+.animate-shimmer {
+  background: linear-gradient(
+    105deg,
+    transparent 40%,
+    rgba(255,255,255,0.18) 50%,
+    transparent 60%
+  );
+  background-size: 200% auto;
+  animation: shimmer 2.4s linear infinite;
+}
+
+/* ── Gradient border spin ───────────────────── */
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+.animate-spin-slow { animation: spin-slow 6s linear infinite; }
+
+/* ── Marquee (trust bar) ────────────────────── */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.animate-marquee { animation: marquee 28s linear infinite; }
+
+/* ── Glow pulse (VIP card border) ──────────── */
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 0 0   0 rgba(249,115,22,0.0), 0 0 30px 6px rgba(249,115,22,0.12); }
+  50%       { box-shadow: 0 0 24px 4px rgba(249,115,22,0.25), 0 0 60px 16px rgba(249,115,22,0.08); }
+}
+.animate-glow-pulse { animation: glow-pulse 3s ease-in-out infinite; }

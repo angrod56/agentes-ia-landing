@@ -14,9 +14,7 @@ export default function Hero() {
   function handleCTA() {
     pixelEvents.initiateCheckout("basico");
     const pricing = document.getElementById("pricing");
-    if (pricing) {
-      pricing.scrollIntoView({ behavior: "smooth" });
-    }
+    if (pricing) pricing.scrollIntoView({ behavior: "smooth" });
   }
 
   return (
@@ -24,14 +22,31 @@ export default function Hero() {
       aria-label="Hero"
       className="relative overflow-hidden bg-[#0D0D0D] px-4 py-16 md:py-24"
     >
-      {/* Radial gradient naranja sutil al centro */}
+      {/* Radial gradient naranja */}
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "radial-gradient(ellipse 80% 50% at 50% 0%, rgba(249,115,22,0.15) 0%, transparent 70%)",
+            "radial-gradient(ellipse 80% 50% at 50% 0%, rgba(249,115,22,0.18) 0%, transparent 70%)",
         }}
+      />
+
+      {/* Orb 1 — arriba izquierda */}
+      <div
+        aria-hidden
+        className="animate-float pointer-events-none absolute -left-20 top-10 h-[420px] w-[420px] rounded-full bg-[#F97316] opacity-[0.05] blur-[80px]"
+      />
+      {/* Orb 2 — abajo derecha */}
+      <div
+        aria-hidden
+        className="animate-float-alt pointer-events-none absolute -right-24 bottom-0 h-[500px] w-[500px] rounded-full bg-[#EA580C] opacity-[0.05] blur-[100px]"
+      />
+      {/* Orb 3 — centro */}
+      <div
+        aria-hidden
+        className="animate-float pointer-events-none absolute left-1/2 top-1/3 h-[300px] w-[300px] -translate-x-1/2 rounded-full bg-[#F97316] opacity-[0.04] blur-[70px]"
+        style={{ animationDelay: "3s" }}
       />
 
       <div className="relative mx-auto max-w-[1200px]">
