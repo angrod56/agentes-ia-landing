@@ -1,0 +1,59 @@
+import PricingCard from "@/components/ui/PricingCard";
+import { copy } from "../../../content/copy";
+
+export default function Pricing() {
+  const { basico, vip } = copy.pricing.plans;
+
+  return (
+    <section
+      id="pricing"
+      aria-label="Planes y precios"
+      className="bg-[#1A1A1A] px-4 py-[80px] md:py-[100px]"
+    >
+      <div className="mx-auto max-w-[1200px]">
+        {/* Pre-título */}
+        <p className="text-center text-xs font-semibold uppercase tracking-widest text-[#F97316]">
+          {copy.pricing.preTitle}
+        </p>
+
+        {/* Título */}
+        <h2 className="mt-3 text-center text-[28px] font-bold leading-tight text-white md:text-[36px]">
+          {copy.pricing.title}
+        </h2>
+
+        {/* Cards — margen superior extra para que el badge VIP no se corte */}
+        <div className="mt-16 flex flex-col gap-8 md:flex-row md:items-center md:gap-8">
+          <div className="md:flex-1">
+            <PricingCard
+              planType="basico"
+              name={basico.name}
+              tagline={basico.tagline}
+              price={basico.price}
+              currency={basico.currency}
+              priceSubtext={basico.priceSubtext}
+              features={basico.features}
+              exclusions={basico.exclusions}
+              ctaText={basico.ctaText}
+              highlighted={basico.highlighted}
+            />
+          </div>
+          <div className="md:flex-1">
+            <PricingCard
+              planType="vip"
+              name={vip.name}
+              tagline={vip.tagline}
+              price={vip.price}
+              currency={vip.currency}
+              priceSubtext={vip.priceSubtext}
+              badge={vip.badge}
+              features={vip.features}
+              ctaText={vip.ctaText}
+              ctaSubtext={vip.ctaSubtext}
+              highlighted={vip.highlighted}
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
