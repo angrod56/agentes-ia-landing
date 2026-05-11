@@ -16,7 +16,7 @@ export const copy = {
     subtitle:
       "Sin saber programar. Sin contratar equipo técnico. Sin pagar suscripciones eternas. El método paso a paso que están usando emprendedores, negocios locales y agencias en LATAM para automatizar atención, ventas y agendamientos 24/7.",
     ctaText: "👉 QUIERO MI ACCESO POR $9",
-    ctaSubtext: "Precio normal $47 — Oferta de lanzamiento por tiempo limitado",
+    ctaSubtext: "Precio normal $197 — Oferta de lanzamiento por tiempo limitado",
     trustBar: [
       { icon: "✅", text: "Acceso inmediato" },
       { icon: "🛡️", text: "Garantía 7 días" },
