@@ -212,6 +212,7 @@ export const copy = {
           "Sesión Q&A en vivo conmigo (1x al mes durante 3 meses)",
           "**Acceso DE POR VIDA al programa**",
           "**Tu Squad de Agentes IA:** te enseñamos a crear un equipo de agentes que trabajan juntos y automatizan tu negocio de punta a punta",
+          "📄 **Material descargable:** Manual de Ingeniería de Prompting para agentes de IA",
           "🎁 **Bono sorpresa:** Mi prompt maestro de Claude para construir agentes 5x más rápido",
         ],
         ctaText: "🔥 QUIERO ENTRAR AL PLAN VIP",
