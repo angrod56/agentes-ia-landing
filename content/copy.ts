@@ -182,12 +182,12 @@ export const copy = {
         tagline: "Quiero aprender a hacerlo yo mismo",
         price: "$9",
         currency: "USD",
-        priceSubtext: "Pago único · Acceso 12 meses",
+        priceSubtext: "Pago único · Acceso 30 días",
         features: [
           "Taller completo (5 módulos)",
           "3 agentes plantilla básicos",
           "Plantillas de prompts esenciales",
-          "Acceso por 12 meses",
+          "Acceso por 30 días",
           "Garantía de 7 días",
         ],
         exclusions: [
@@ -297,7 +297,7 @@ export const copy = {
       {
         question: "¿Cuánto tiempo tengo acceso?",
         answer:
-          "Plan Básico: 12 meses. Plan VIP: acceso de por vida + todas las actualizaciones futuras incluidas.",
+          "Plan Básico: 30 días. Plan VIP: acceso de por vida + todas las actualizaciones futuras incluidas.",
       },
     ],
   },
