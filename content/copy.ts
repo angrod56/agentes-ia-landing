@@ -167,7 +167,6 @@ export const copy = {
       { item: "Librería de 7 agentes plantilla listos", value: "$297" },
       { item: "Plantillas de prompts profesionales", value: "$97" },
       { item: "Checklist técnico de implementación", value: "$47" },
-      { item: "Acceso al grupo privado de Telegram", value: "$97" },
       { item: "Actualizaciones de por vida", value: "$147" },
     ],
     totalValue: "$882",
@@ -192,7 +191,6 @@ export const copy = {
           "Garantía de 7 días",
         ],
         exclusions: [
-          "Sin grupo privado de Telegram",
           "Sin sesión Q&A en vivo",
           "Sin módulo de monetización",
           "Sin librería completa de 7 agentes",
@@ -213,7 +211,6 @@ export const copy = {
           '**Módulo exclusivo:** "Cómo cobrar $500–$3.000 USD por implementación"',
           "Guion de venta + propuesta tipo + contrato modelo",
           "Sesión Q&A en vivo conmigo (1x al mes durante 3 meses)",
-          "Grupo privado de Telegram con +500 implementadores",
           "**Acceso DE POR VIDA + todas las actualizaciones futuras**",
           "🎁 **Bono sorpresa:** Mi prompt maestro de Claude para construir agentes 5x más rápido",
         ],
