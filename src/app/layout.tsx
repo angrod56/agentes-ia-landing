@@ -27,6 +27,10 @@ export const metadata: Metadata = {
     images: [copy.meta.ogImage],
   },
   robots: { index: true, follow: true },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/icon-192.png",
+  },
 };
 
 export default function RootLayout({
