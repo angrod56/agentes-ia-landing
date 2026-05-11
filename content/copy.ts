@@ -211,6 +211,7 @@ export const copy = {
           "Guion de venta + propuesta tipo + contrato modelo",
           "Sesión Q&A en vivo conmigo (1x al mes durante 3 meses)",
           "**Acceso DE POR VIDA al programa**",
+          "**Tu Squad de Agentes IA:** te enseñamos a crear un equipo de agentes que trabajan juntos y automatizan tu negocio de punta a punta",
           "🎁 **Bono sorpresa:** Mi prompt maestro de Claude para construir agentes 5x más rápido",
         ],
         ctaText: "🔥 QUIERO ENTRAR AL PLAN VIP",
