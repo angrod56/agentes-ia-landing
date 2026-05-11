@@ -7,6 +7,7 @@ import Curriculum from "@/components/sections/Curriculum";
 import DemoEnVivo from "@/components/sections/DemoEnVivo";
 import ValueStack from "@/components/sections/ValueStack";
 import Pricing from "@/components/sections/Pricing";
+import BonusWhatsApp from "@/components/sections/BonusWhatsApp";
 import Garantia from "@/components/sections/Garantia";
 import Testimonios from "@/components/sections/Testimonios";
 import FAQs from "@/components/sections/FAQs";
@@ -27,6 +28,7 @@ export default function HomePage() {
       <DemoEnVivo />
       <ValueStack />
       <Pricing />
+      <BonusWhatsApp />
       <Garantia />
       <Testimonios />
       <FAQs />
