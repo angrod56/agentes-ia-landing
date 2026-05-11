@@ -1,34 +1,32 @@
 "use client";
 
-import Script from "next/script";
-import { ANALYTICS } from "@/lib/constants";
+import { useEffect } from "react";
+
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID ?? "";
 
 export default function GoogleAnalytics() {
-  const gaId = ANALYTICS.gaId;
+  useEffect(() => {
+    if (!GA_ID) return;
 
-  if (!gaId) return null;
+    // Inyectar gtag.js
+    const script = document.createElement("script");
+    script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
+    script.async = true;
+    document.head.appendChild(script);
 
-  return (
-    <>
-      <Script
-        src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
-        strategy="afterInteractive"
-      />
-      <Script
-        id="google-analytics"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${gaId}', {
-              page_location: window.location.href,
-              page_title: document.title
-            });
-          `,
-        }}
-      />
-    </>
-  );
+    // Inicializar gtag en window
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    (window as any).dataLayer = (window as any).dataLayer || [];
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    (window as any).gtag = function (...args: any[]) {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      (window as any).dataLayer.push(args);
+    };
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const gtag = (window as any).gtag;
+    gtag("js", new Date());
+    gtag("config", GA_ID);
+  }, []);
+
+  return null;
 }
