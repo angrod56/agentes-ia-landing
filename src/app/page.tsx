@@ -13,7 +13,6 @@ import Testimonios from "@/components/sections/Testimonios";
 import FAQs from "@/components/sections/FAQs";
 import CTAFinal from "@/components/sections/CTAFinal";
 import Footer from "@/components/sections/Footer";
-import WhatsAppFloat from "@/components/ui/WhatsAppFloat";
 import SaleNotification from "@/components/ui/SaleNotification";
 import StickyCta from "@/components/ui/StickyCta";
 
@@ -35,7 +34,6 @@ export default function HomePage() {
       <FAQs />
       <CTAFinal />
       <Footer />
-      <WhatsAppFloat />
       <SaleNotification />
       <StickyCta />
     </main>
