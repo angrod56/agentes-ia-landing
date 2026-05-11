@@ -7,7 +7,7 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
-const PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID ?? "";
+const PIXEL_ID = (process.env.NEXT_PUBLIC_META_PIXEL_ID ?? "").trim();
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_CONFIG.url),
