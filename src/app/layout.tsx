@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import { copy } from "../../content/copy";
 import { SITE_CONFIG } from "@/lib/constants";
 import MetaPixel from "@/components/analytics/MetaPixel";
+import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
@@ -40,6 +41,7 @@ export default function RootLayout({
     <html lang="es" className={inter.variable}>
       <body className="antialiased">
         <MetaPixel />
+        <GoogleAnalytics />
         {children}
       </body>
     </html>
